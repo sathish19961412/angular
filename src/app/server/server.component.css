@@ -1,0 +1,13 @@
+p{
+  background:blue;
+  color: #fff;;
+  width:180px;
+  height: auto;
+  padding:1% 1%;
+}
+p:hover{
+  background:red;
+}
+p:visited{
+  background:green;
+}

@@ -1,0 +1,32 @@
+<section>
+  <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+              <div class="mt-5 d-flex">
+                <span  class="mr-2">My username is {{username}}</span>
+                <span  class="mr-2">My age is {{age}}</span>
+                <span  class="mr-2">My City is {{City}}</span>
+                <span  class="mr-2">My Location is {{getCity()}}</span>
+              </div>
+              <div class="mt-5 d-flex">
+                <span [innerText]="name" class="mr-2"></span>
+                <span [innerText]="age" class="mr-2"></span>
+                <span [innerText]="getCity()" class="mr-2"></span>
+                <span [innerText]="age1" class="mr-2"></span>
+              </div>
+            </div>
+            <div class="col-md-6">
+                <div class="d-flex justify-content-center mt-5">
+                    <button class="btn btn-success" (click)="changeName()">Change</button>
+                </div>
+            </div>
+            <div class="col-md-6">
+              <div class="d-flex justify-content-center mt-5">
+                 <input type="text" (input)="change($event)" />
+              </div>
+            </div>
+        </div>
+  </div>
+</section>
+
+

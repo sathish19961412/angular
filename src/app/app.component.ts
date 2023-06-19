@@ -10,6 +10,7 @@ export class AppComponent {
  name!:string;
  username:string="sathish@1412199";
  City:string="Coimbatore";
+ names:string="";
  age:number=26;
  age1:number=27;
  isdisabled:boolean=true;

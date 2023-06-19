@@ -36,12 +36,22 @@
         <div class="row">
              <div class="col-md-6">
                  <input type="text" [(ngModel)]="name"/>
-                 <p>{{text}}</p>
              </div>
              <div class="col-md-6">
                 <button class="btn btn-success" (click)="addName()" [disabled]="btnDisable">Add Name</button>
+                <p>{{text}}</p>
              </div>
         </div>
+        <div class="row">
+          <div class="col-md-6">
+              <input type="text" [(ngModel)]="names" [ngModelOptions]="{standalone:true}"/>
+
+          </div>
+          <div class="col-md-6">
+             <button class="btn btn-success" [disabled]="names===''" (click)="names=''">Reset</button>
+             <p>{{names}}</p>
+          </div>
+     </div>
   </div>
 </section>
 

@@ -1,6 +1,6 @@
 <section>
   <div class="container">
-        <div class="row">
+          <div class="row">
             <div class="col-md-12">
               <div class="mt-5 d-flex">
                 <span  class="mr-2">My username is {{username}}</span>
@@ -15,6 +15,8 @@
                 <span [innerText]="age1" class="mr-2"></span>
               </div>
             </div>
+          </div>
+          <div class="row">
             <div class="col-md-6">
                 <div class="d-flex justify-content-center mt-5">
                     <button class="btn btn-success" (click)="changeName()">Change</button>
@@ -22,9 +24,23 @@
             </div>
             <div class="col-md-6">
               <div class="d-flex justify-content-center mt-5">
+                 <label class="mr-3">Name</label>
                  <input type="text" (input)="change($event)" />
               </div>
+              <div class="d-flex justify-content-center mt-5">
+                <label class="mr-3">City</label>
+                <input type="text" [(ngModel)]="City" [ngModelOptions]="{standalone:true}"/>
+             </div>
             </div>
+          </div>
+        <div class="row">
+             <div class="col-md-6">
+                 <input type="text" [(ngModel)]="name"/>
+                 <p>{{text}}</p>
+             </div>
+             <div class="col-md-6">
+                <button class="btn btn-success" (click)="addName()" [disabled]="btnDisable">Add Name</button>
+             </div>
         </div>
   </div>
 </section>

@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+ title="Top 5 Movies";
  btnDisable:boolean=true;
  name!:string;
  username:string="sathish@1412199";
@@ -15,6 +16,7 @@ export class AppComponent {
  age1:number=27;
  isdisabled:boolean=true;
  text:string="No name is added";
+
 
 
  constructor(){
@@ -34,4 +36,7 @@ export class AppComponent {
  addName(){
     this.text=" Your name is " + " " + this.name;
  }
+
+
 }
+
